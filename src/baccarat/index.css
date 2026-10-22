@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #20262E;
+  font-family: Helvetica, sans-serif;
+}
+
+.body {
+  padding: 8px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  position: absolute;
+  background: #374353FF;
+  border-radius: 5px;
+}
+
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: gray;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.subtitle {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.github-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8A8A8A;
+}
+
+.github-link {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #FAFAFA;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  opacity: 0.8;
+}
+
+.header {
+  background: #2A2A2A;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.hand-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.hand-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hand-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card {
+  box-sizing: border-box;
+  background: white;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 36px;
+  width: 36px;
+  height: 50px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-text:last-child {
+  transform: rotate(180deg);
+}
+
+.card.red {
+  color: #dc2626;
+}
+
+.card.black {
+  color: #1f2937;
+}
+
+.banker-section {
+  background: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.player-section {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+} 
+.baccarat-result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.baccarat-hands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.baccarat-hands .hand-section {
+  flex: 1 1 200px;
+}
+
+.hand-section.winner {
+  box-shadow: 0 0 0 2px #facc15;
+}
+
+.outcome {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.outcome-player {
+  background: rgba(34, 197, 94, 0.3);
+}
+
+.outcome-banker {
+  background: rgba(220, 38, 38, 0.3);
+}
+
+.outcome-tie {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.error {
+  color: #f87171;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 4px 8px;
+  border: 1px solid gray;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.payout-table {
+  align-self: flex-start;
+}
+
+.payout-win td {
+  color: #4ade80;
+}
+
+.payout-push td {
+  color: #facc15;
+}
+
+.payout-lose td {
+  color: #9ca3af;
+}
+
+.unused-row td {
+  color: #6b7280;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 8px;
+}
+
+.calculation-explanation {
+  color: white;
+}
+
+.calculation-explanation h3 {
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.explanation-step {
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.explanation-step h4 {
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.explanation-step p {
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.explanation-step pre {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  overflow-x: auto;
+  margin: 0 0 8px;
+}
